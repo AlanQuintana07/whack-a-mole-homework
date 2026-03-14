@@ -1,0 +1,33 @@
+.hole {
+  background: url("/hole.png") no-repeat center/contain;
+}
+
+.mole {
+  background-image: url("/mole.png");
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 30px;
+  justify-content: center;
+}
+
+.hole {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.hole-img {
+  width: 100%;
+}
+
+.mole-img {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  cursor: pointer;
+}
